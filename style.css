@@ -1,23 +1,24 @@
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* css reset */
-*{
+/* Zerando margens, preenchimentos e configurando caixa de modelo */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fundo-tela */
-
-html{
+/* Configurações gerais para o elemento HTML */
+html {
     width: 100vw;
     height: 100vh;
-    font-size: 62.5%;
+    font-size: 62.5%; /* Definindo a unidade de fonte base para 10px (facilita cálculos em rem) */
     color: white;
     font-family: 'Lato', sans-serif;
 }
 
-body{
+/* Configurações para o corpo da página */
+body {
     background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/img/img5.jpg);
     background-position: center center;
     background-size: cover;
@@ -25,15 +26,15 @@ body{
     background-repeat: no-repeat;
 }
 
-/* Menu - Header - NavBar */
-
-header{
+/* Configurações para o cabeçalho */
+header {
     width: 100%;
     height: 7vh;
     background: rgba(22, 22, 22, 0.2);
 }
 
-.menu-content{
+/* Configurações para o conteúdo do menu */
+.menu-content {
     text-transform: uppercase;
     height: 100%;
     display: flex;
@@ -42,27 +43,31 @@ header{
     font-size: 1.8rem;
 }
 
-.logo{
+/* Configurações para o logotipo */
+.logo {
     font-size: 1.8rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
 }
 
-.main-content .list-itens{
+/* Configurações para a lista de itens do menu */
+.main-content .list-itens {
     display: flex;
     list-style: none;
     gap: 10px;
 }
 
-.menu-content .list-itens a{
+/* Configurações para os links do menu */
+.menu-content .list-itens a {
     text-decoration: none;
     color: white;
     padding: 1.5rem;
-    transform: 2ms ease-in;
+    transition: 0.2s ease-in; /* Transição suave para o efeito hover */
     position: relative;
 }
 
-.menu-content .list-itens a:before{
+/* Efeito de sublinhado nos links do menu */
+.menu-content .list-itens a:before {
     content: ' ';
     position: absolute;
     bottom: 0;
@@ -73,51 +78,52 @@ header{
     transition: all 1.5s ease;
 }
 
-.menu-content .list-itens a:hover:before{
-    width: 100%;   
+/* Efeito de sublinhado nos links do menu ao passar o mouse */
+.menu-content .list-itens a:hover:before {
+    width: 100%;
 }
 
-/* Centro - Conteúdo Principal */
-
-main{
+/* Configurações para o conteúdo principal */
+main {
     height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-content{
+/* Configurações para o conteúdo principal */
+.main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Textos conteúdo principal */
-
-.primary-text{
+/* Estilo do texto principal */
+.primary-text {
     width: 850px;
     font-size: 5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.second-text{
+/* Estilo do texto secundário */
+.second-text {
     margin-bottom: 7rem;
     font-size: 2rem;
     color: rgb(165, 165, 165);
     text-transform: uppercase;
 }
 
-/* Botões */
-
-.btns{
+/* Configurações para os botões */
+.btns {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.btns button{
+/* Estilo dos botões */
+.btns button {
     width: 250px;
     height: 60px;
     cursor: pointer;
@@ -132,12 +138,14 @@ main{
     transition: 1.5s;
 }
 
-.btns button:hover{
+/* Efeito de hover nos botões */
+.btns button:hover {
     color: rgb(251, 255, 0);
     border: none;
 }
 
-.btns button:before{
+/* Efeito de fundo nos botões ao passar o mouse */
+.btns button:before {
     content: ' ';
     border-radius: 20px;
     bottom: 0;
@@ -150,6 +158,7 @@ main{
     transition: 1s;
 }
 
-.btns button:hover{
+/* Efeito de fundo nos botões ao passar o mouse */
+.btns button:hover:before {
     width: 100%;
 }
